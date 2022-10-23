@@ -1,5 +1,8 @@
 add_rules("mode.debug", "mode.release")
 
+add_requires("vcpkg::zlib", {alias = "zlib"})
+add_requires("vcpkg::pcre2", {alias = "pcre2"})
+
 set_languages("c++20")
 
 target("dll")
